@@ -1,0 +1,141 @@
+.third1{
+    height: 100%;
+    /* width: 100%; */
+    background-color:#0E161F ;
+    display: flex;
+}
+
+/* left content --------------------------- */
+.left{
+    height: auto;
+    width: 50vw;
+    /* background-color: #0E161F; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.left .main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   position: relative;
+/* top: 10vh; */
+}
+
+.left .content{
+   
+    height: 100vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.left .content h1{
+    font-size:13vh;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: Rubik Doodle Shadow;
+}
+.left .content p{
+    color: white;
+    margin-left: 5vw;
+}
+
+.left .content .left-images{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+    
+}
+.left .content .left-images img{
+    height: 5vh;
+    margin-right: 1vw;
+   
+}
+.left .content .button-container{
+    display: flex;
+    
+}
+
+h4{
+    color: white;
+    background-color: #141d29;
+    height: 5vh;
+    width: 3vw;
+    text-align: center;
+    border-radius: 10px;
+}
+.button {
+    font-family: Source Code Pro;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 2vw;
+  }
+  
+  .button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+
+
+
+.right{
+    height: 100vh;
+    width: 50vw;
+      background-color: #0E161F;
+    
+}
+
+.right .main-container1{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+
+}
+
+.right .main-container1 .container2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+.right .main-container1 .video-container{
+    height: 60vh;
+    width: 48vw;
+    position: absolute;
+    cursor: pointer;
+    top: 20vh;
+    overflow: hidden;
+   
+}
+
+.right .main-container1 .video-container video{
+    object-fit: cover;
+    height: 60vh;
+    width: 48vw;
+    border-radius: 10px;
+    
+}

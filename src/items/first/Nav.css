@@ -1,0 +1,83 @@
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5vw;
+  }
+  
+  .nav{
+    position: fixed;
+    z-index: 999;
+  }
+  .navbar {
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(9px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+     width: 75vw;
+     left: 13vw;
+     top: -5vh;
+   }
+  .navbar-brand {
+    margin-left: 5vh;
+  }
+  .container-fluid {
+    display: flex;
+  }
+  .navbar-nav {
+    margin-left: 35vw;
+    color: white;
+  }
+  .nav-item {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 500;
+    transition: all ease-in-out 0.2s;
+  }
+  .nav-item:hover {
+    scale: 1.06;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    section{
+      z-index: 300;
+    }
+    .nav{
+      position:relative;
+      z-index: 999;
+    }
+    .navbar {
+      margin-top: 10px;
+      background-color: rgb(255, 255, 255);
+      top: 3vh;
+      min-width:80vw;
+      left:8vw;
+      
+    }
+    .navbar-nav {
+      margin-left: 5vw;
+    }
+  
+    .logo {
+      color: rgb(0, 0, 0);
+      font-size: 5vw;
+      font-family: Helvetica;
+      text-decoration: none;
+      font-weight: 700;
+      margin-left: 5vw;
+    }
+  
+    .nav-item {
+      font-size: 3.5vw;
+      font-weight: 700;
+      text-transform: uppercase;
+      
+    }
+  
+  
+  }

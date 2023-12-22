@@ -1,0 +1,336 @@
+.container {
+    overflow: hidden;
+    height: 90vh;
+    margin-top: 10vh;
+  }
+  
+  .about {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    top: 12vh;
+    left: 17vw;
+    /* justify-content: center;  */
+  }
+  .about img {
+    height: 30px;
+  }
+  .about p {
+    font-family: Source Code Pro;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-left: 0.5vw;
+    width: 0ch;
+    text-transform: capitalize;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    animation: type 5s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 21ch;
+  }
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 40%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  .text {
+    position: relative;
+    display: flex;
+    top: 8vh;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .text h1 {
+    font-family: Oleo Script Swash Caps;
+    font-size: 10vw;
+    color: black;
+    transition: all ease-in-out 0.2s;
+    /* z-index: 99; */
+  }
+  .text > h1:hover {
+    scale: 1.02;
+  }
+  
+  .text2 {
+    position: relative;
+    display: flex;
+    /* top:-2vh; */
+    justify-content: center;
+    /* align-items: center; */
+  }
+  
+  .text2 h1 {
+    font-family: Rampart One;
+    color: black;
+    font-size: 9vw;
+    transition: all ease-in-out 0.2s;
+  }
+  .text2 > h1:hover {
+    scale: 1.3;
+  }
+  
+  .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 35vh;
+  }
+  .image img {
+    /* width: 841px; */
+    height: 35vw;
+  }
+  
+  .btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 25vw;
+    overflow: hidden;
+  }
+  
+  .btn .btn1 {
+    position: relative;
+    background-color: black;
+    font-weight: 600;
+    color: white;
+    padding: 1vh 0.5vw;
+    border-radius: 4px;
+    transition: all ease-in-out 0.2s;
+    right: 2vw;
+  }
+  
+  .btn .btn1:hover {
+    scale: 1.02;
+    background-color: rgb(25, 25, 25);
+  }
+  
+  .btn .btn1 img {
+    height: 18px;
+    margin-right: 0.5vw;
+  }
+  
+  .btn .btn2 {
+    position: relative;
+    padding: 1vh 0.5vw;
+    border-radius: 4px;
+    border-width: 3px;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+    background-color: transparent;
+    left: 2vw;
+  }
+  .btn .btn2:hover {
+    scale: 1.02;
+    font-weight: 600;
+  }
+  
+  .social {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    width: 35vh;
+    justify-content: space-evenly;
+    bottom: 30vh;
+    left: 73vw;
+  }
+  .social .socialimg {
+    height: 5vh;
+    transition: all ease-in-out 0.2s;
+  }
+  
+  .social .socialimg:hover {
+    scale: 1.02;
+  }
+  
+  .txtexperence {
+    position: absolute;
+    bottom: 30vh;
+    left: 13vw;
+    overflow: hidden;
+  }
+  
+  .txtexperence h1 {
+    overflow: hidden;
+    color: black;
+    font-size: 22px;
+    font-style: italic;
+    font-family: Source Code Pro;
+    font-weight: 800;
+  }
+  
+
+
+  @media only screen and (max-width: 700px){
+
+
+  .container {
+    overflow: hidden;
+    min-height: 90vh;
+    margin-top: -5vh;
+    }
+     .about {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    top: 11vh;
+    left: 17vw;
+    /* justify-content: center;  */
+    
+  }
+  .about img {
+    height: 10px;
+    
+  }
+  .about p {
+    font-family: Source Code Pro;
+    font-size: 1.9vw;
+    font-weight: 600;
+    margin-left: 0.5vw;
+    width: 0ch;
+    text-transform: capitalize;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    animation: type 5s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 40ch;
+  }
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 70%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  .text {
+    position: relative;
+    display: flex;
+    top: 13vh;
+    justify-content: center;
+  }
+  .text h1 {
+    font-family: Oleo Script Swash Caps;
+    font-size: 12vw;
+    color: black;
+  }
+
+  .text2 {
+    position: relative;
+    display: flex;
+    top: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .text2 h1 {
+    font-family: Rampart One;
+    color: black;
+    font-size: 10vw;
+    bottom: 100px;
+  }
+  .text2 > h1:hover {
+    scale: 1;
+  }
+
+  .btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70vw;
+    overflow: hidden;
+  }
+
+  .btn .btn1 {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    color: white;
+    font-size: 3.5vw;
+    padding: 1vh 4vw;
+    border-radius: 4px;
+    transition: all ease-in-out 0.2s;
+    right: 2vw;
+  }
+
+  .btn .btn1 img {
+    height: 19px;
+    margin-right: 1vw;
+  }
+
+  .btn .btn2 {
+    position: relative;
+    padding: 1vh 3vw;
+    background-color: rgb(50, 56, 94);
+    border-radius: 6px;
+    font-size: 3.5vw;
+    color: cornsilk;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+
+    left: 2vw;
+  }
+
+  .txtexperence {
+    position: relative;
+    bottom: 61.3vh;
+    left: 7vw;
+    overflow: hidden;
+  }
+
+  .txtexperence h1 {
+    overflow: hidden;
+    color: black;
+    font-size: 10px;
+    font-style: italic;
+    font-family: Source Code Pro;
+    font-weight: 800;
+  }
+
+  
+.image {
+  overflow: hidden;
+  position: ab;
+  display: flex;
+  justify-content: center;
+  top: 20vh;
+}
+.image img {
+  /* width: 841px; */
+  /* z-index: 99; */
+  height: 50vh;
+}
+
+.social {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 35vh;
+  justify-content: space-evenly;
+  
+  bottom: 13vh;
+  left: 17vw;
+}
+.social .socialimg {
+  height: 5vh;
+ 
+}
+
+
+  }
+    
+  

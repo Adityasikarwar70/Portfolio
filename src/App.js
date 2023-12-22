@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./locomotive-scroll.css";
+import React from "react";
+import First from "./items/first/First";
+import Nav from "./items/first/Nav";
+import Second from "./items/second/Second";
+import Third1 from "./items/third/Third1";
+import Contact from "./items/contact/Contact";
 
 function App() {
+  setInterval(()=>{
+    document.title ="Portfolio - CV"
+  
+  },2000);
+  setInterval(()=>{
+    document.title ="Portfolio"
+  
+  },1500);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav  />                 {/*nav bar*/}       
+      <First />               {/* body..................................... */}
+      <Second />               {/* body..................................... */}
+      <Third1 />                 {/* body..................................... */} 
+     <Contact />
+
+      
+    </>
   );
 }
 
