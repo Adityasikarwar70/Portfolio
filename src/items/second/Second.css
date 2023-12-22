@@ -29,7 +29,7 @@
     border: solid #17212D;
     border-width: 2px;
     min-width: 40vw;
-    min-height: 63vh;
+    min-height: 70vh;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
     font-family: Source Code Pro;
     font-size: 1vw;
     left: -6.5vw;
-    top: 2vh;
+    top: 1vh;
     align-items: center;
     
 }

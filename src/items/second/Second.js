@@ -29,7 +29,7 @@ function Second() {
               Hey there! I am Aditya Sikarwar
             </p>
 
-            <img src={require("../../images/bittu.JPG")} alt="" />
+            <img  src={require("../../images/aditya2.jpeg")} alt="" />
           </motion.div>
           <motion.div
            variants={fadeIn("left",0.3)}
