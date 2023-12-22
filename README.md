@@ -3,7 +3,9 @@
 Portfolio-Aditya-Sikarwar [-PORTFOLIO-](https://aditya-sikarwar-portfolio.netlify.app/).
 
 
+# Screenshots
 
+![Alt text](image-1.png)
 
 
 
