@@ -1,4 +1,5 @@
 .third1{
+    
     height: 100%;
     /* width: 100%; */
     background-color:#0E161F ;
@@ -138,4 +139,129 @@ h4{
     width: 48vw;
     border-radius: 10px;
     
+}
+
+.Mobile{
+   display: none;
+    
+}
+@media only screen and (max-width: 700px){
+    .third1{
+        display: none;
+        
+    }
+    
+    .Mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        
+
+        /* height: 100vh;
+        width: 100vw; */
+        background-color: #0E161F;
+
+    }
+
+    .mobile-container{
+        background-color: #ffffff0f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        height: 70vh;
+        width: 85vw;
+        border: 1px solid slategray;
+        border-radius: 12px;
+        margin: 2vh 0;
+    }
+
+    .mobile-container>.mobile-video{
+        /* position: absolute;
+        top: 2vh; */
+        margin: 0vh 0;
+        height: 20vh;
+        width: 70vw;
+    }
+
+    .mobile-container>.mobile-video>video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .mobile-text{
+        position: relative;
+        top: -2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+    }
+
+    .mobile-text>.mobile-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-text>.mobile-heading>h1{
+       
+        font-family:Rubik Doodle Shadow ;
+        font-size: 5vh;
+    }
+
+    .mobile-text>.mobile-desc>p{
+        font-family:Source Code Pro ;
+        font-size: 1.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4vh;
+    }
+
+    .mobile-text>.mobile-skills{
+        position: relative;
+        height: 15vh;
+        top: 2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vh;
+        align-items: center;
+    }
+    .mobile-text>.mobile-skills>.mobile-img>img{
+        position: relative;
+        margin: 1vh 0;
+        /* left: 1vh; */
+        top: 0.3vh;
+        height: 3.5vh;
+        
+    }
+
+    .mobile-text>.mobile-skills>.mobile-button{}
+
+
+    .mobile-text>.mobile-skills>.mobile-button>a>.button2{
+        position: relative;
+        left: -1.5vh;
+    font-family: Source Code Pro;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 2vw;
+    }
 }

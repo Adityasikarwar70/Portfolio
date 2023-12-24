@@ -1,5 +1,4 @@
 .container {
-    overflow: hidden;
     height: 90vh;
     margin-top: 10vh;
   }
@@ -173,7 +172,7 @@
 
 
   .container {
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: 90vh;
     margin-top: -5vh;
     }

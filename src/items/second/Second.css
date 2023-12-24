@@ -1,4 +1,11 @@
-.second{
+/* 
+*{
+  
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  } */
+  .second{
     /* height:90vh; */
     background-color: #0E161F;
     min-height: 100vh;
@@ -294,6 +301,12 @@ hr{
 
 @media only screen and (max-width: 700px){
 
+    .second{
+        /* height:90vh; */
+        background-color: #0E161F;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
     .text1{
         font-size: 4vw;
         padding: 3vh 33.1vw;
