@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import "./Third1.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import tufgaming from "../../images/tufgaming.MP4";
-import resume from "../../images/resume.MP4";
-import summerizer from "../../images/summerizer.MP4";
-import textbox from "../../images/texteditor.MP4";
-import redstore from "../../images/redstore.MP4";
+import tufgaming from "../../images/New folder/tufgaming1.gif";
+import resume from "../../images/New folder/resume1.gif";
+import summerizer from "../../images/New folder/summerizer1.gif";
+import textbox from "../../images/New folder/texteditor1.gif";
+import redstore from "../../images/New folder/redstore1.gif";
 import html from "../../images/html.png";
 import css from "../../images/css.png";
 import js from "../../images/js.png";
@@ -24,7 +24,7 @@ const Third1 = () => {
     let ctx = gsap.context(() => {
       gsap.set(".video-container:not(:first-child)", {
         opacity: 0,
-        scale: 0.5,
+        scale: 0.7,
       });
 
       const animation = gsap.to(".video-container:not(:first-child)", {
@@ -208,23 +208,28 @@ const Third1 = () => {
           <div className="main-container1">
             <div className="container2">
               <div className="video-container">
-                <video src={tufgaming} autoPlay loop muted></video>
+                <img src={tufgaming} alt="" />
+                {/* <video src={tufgaming} ></video> */}
               </div>
 
               <div className="video-container">
-                <video src={summerizer} autoPlay loop muted></video>
+                <img src={summerizer} alt="" />
+                {/* <video src={summerizer} autoPlay loop muted></video> */}
               </div>
 
               <div className="video-container">
-                <video src={resume} autoPlay loop muted></video>
+              <img src={resume} alt="" />
+                {/* <video src={resume} autoPlay loop muted></video> */}
               </div>
 
               <div className="video-container">
-                <video src={textbox} autoPlay loop muted></video>
+              <img src={textbox} alt="" />
+                {/* <video src={textbox} autoPlay loop muted></video> */}
               </div>
 
               <div className="video-container">
-                <video src={redstore} autoPlay loop muted></video>
+              <img src={redstore} alt="" />
+                {/* <video src={redstore} autoPlay loop muted></video> */}
               </div>
             </div>
           </div>
@@ -234,7 +239,8 @@ const Third1 = () => {
       <section id="Mobile" className="Mobile">
         <div className="mobile-container">
           <div className="mobile-video">
-            <video src={tufgaming} autoPlay loop muted></video>
+          <img src={tufgaming} alt="" />
+
           </div>
 
           <div className="mobile-text">
@@ -271,7 +277,8 @@ const Third1 = () => {
         </div>
         <div className="mobile-container">
           <div className="mobile-video">
-          <video src={summerizer} autoPlay loop muted></video>
+          <img src={summerizer} alt="" />
+
           </div>
 
           <div className="mobile-text">
@@ -312,7 +319,8 @@ const Third1 = () => {
         </div>
         <div className="mobile-container">
           <div className="mobile-video">
-            <video src={resume} autoPlay loop muted></video>
+          <img src={resume} alt="" />
+
           </div>
 
           <div className="mobile-text">
@@ -349,7 +357,8 @@ const Third1 = () => {
         </div>
         <div className="mobile-container">
           <div className="mobile-video">
-            <video src={textbox} autoPlay loop muted></video>
+          <img src={textbox} alt="" />
+
           </div>
 
           <div className="mobile-text">
@@ -386,7 +395,8 @@ const Third1 = () => {
         </div>
         <div className="mobile-container">
           <div className="mobile-video">
-            <video src={redstore} autoPlay loop muted></video>
+          <img src={redstore} alt="" />
+
           </div>
 
           <div className="mobile-text">

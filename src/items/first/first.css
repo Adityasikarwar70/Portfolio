@@ -1,6 +1,7 @@
 .container {
     height: 90vh;
     margin-top: 10vh;
+    overflow: hidden;
   }
   
   .about {
@@ -172,7 +173,8 @@
 
 
   .container {
-    overflow-x: hidden;
+    position: relative;
+    /* overflow-x: hidden; */
     min-height: 90vh;
     margin-top: -5vh;
     }
