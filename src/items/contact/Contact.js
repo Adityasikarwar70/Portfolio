@@ -1,8 +1,8 @@
 import React from 'react'
 import './Contact.css'
-import instagram from "../../images/instagram.png"
-import linkedin from "../../images/linkedin2.png"
-import github from "../../images/github2.png"
+// import instagram from "../../images/instagram.png"
+// import linkedin from "../../images/linkedin2.png"
+// import github from "../../images/github2.png"
 import { FaInstagram } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
