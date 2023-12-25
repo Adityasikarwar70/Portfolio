@@ -48,14 +48,16 @@
   margin:0px 30px;
   }
   
-  .footer .row1 a img{
+  .footer .row1 a{
    
-   height: 3em;
+   font-size: 5vh;
+   color: slategray;
     margin-right: 2vw;
 
   transition:0.5s;
   }
-  .footer .row1 a img:hover{
+  .footer .row1 a:hover{
+    color: #fff;
     scale: 1.08;
   }
 
@@ -73,7 +75,29 @@
   margin:10px 0px;
   text-align:left;
   }
+  .footer .row ul li a{
+  color: slategray;
+  font-size: 2vh;
+  }
   .footer .row a i{
   margin:0% 3%;
   }
+  /* .footer .row1{
+    display: flex;
+    gap: 2vw;
+  } */
+
+  .footer .row1 a{
+   
+    margin: 0 3vw;
+    font-size: 3vh;
+    color: slategray;
+     margin-right: 2vw;
+   
+   }
+   .footer .row2 {
+    text-align: center;
+    color:rgb(71, 82, 93);
+    font-size: 1.5vh;
+   }
   }
