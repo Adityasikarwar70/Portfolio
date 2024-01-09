@@ -9,74 +9,73 @@ function Second() {
   const comp = useRef(null)
   useLayoutEffect(()=>{
     let ctx = gsap.context(()=>{ 
-      const t1 =  gsap.timeline()
+//       const t1 =  gsap.timeline()
    
-t1.fromTo(".second",
-{
-    backgroundColor:"#fff"
-},
-{
-  backgroundColor:"#0E161F",
-  // opacity:0,
-  // y:"40%",
-  // duration:2,
-  scrollTrigger:{
-    trigger:".second",
-    start:"top 70%",
-    
-    end:"bottom 150%",
-    // markers:true,
-    scrub:1,
-  }
-}
-)
+// t1.fromTo(".second",
+// {
+//     backgroundColor:"#fff"
+// },
+// {
+//   backgroundColor:"#0E161F",
+//   opacity:0,
+//   // y:"40%",
+//   // duration:2,
+//   scrollTrigger:{
+//     trigger:".second",
+//     start:"top 70%",
+//     end:"bottom 150%",
+//     // markers:true,
+//     scrub:1,
+//   }
+// }
+// )
 
-t1.from([".img-section"],{
-  color:"#black",
-  opacity:0,
-  // duration:1,
-  y:"30%",
-  scrollTrigger:{
-    trigger:".img-section",
-    start:"top 75%",
-    end:"bottom bottom",
-    scrub:1,
-    // markers:true,
-  }
-})
-t1.from([".abut-section"],{
-  color:"#black",
-  opacity:0,
-  // duration:1,
-  y:"30%",
-  scrollTrigger:{
-    trigger:".abut-section",
-    start:"top 75%",
-    end:"bottom bottom",
-    scrub:1,
-    // markers:true,
-  }
-})
-t1.from([".lang",".skills-other"],{
-  color:"#black",
-  opacity:0,
-  duration:3,
-  y:"30%",
-  scrollTrigger:{
-    trigger:".lang",
-    start:"top 75%",
-    end:"bottom 70%",
-    scrub:true,
-    // markers:true,
-  }
-})
+// gsap.from([".img-section"],{
+//   color:"#black",
+//   // opacity:0,
+//   // duration:1,
+//   y:"30%",
+//   scrollTrigger:{
+//     trigger:".img-section",
+//     start:"top 75%",
+//     end:"bottom bottom",
+//     scrub:1,
+//     // markers:true,
+//   }
+// })
 
-
-
+// gsap.from([".abut-section"],{
+//   color:"#black",
+//   opacity:0,
+//   // duration:1,
+//   y:"30%",
+//   scrollTrigger:{
+//     trigger:".abut-section",
+//     start:"top 75%",
+//     end:"bottom bottom",
+//     scrub:1,
+//     // markers:true,
+//   }
+// })
+// gsap.from([".lang",".skills-other"],{
+//   color:"#black",
+//   opacity:0,
+//   duration:3,
+//   y:"30%",
+//   scrollTrigger:{
+//     trigger:".lang",
+//     start:"top 75%",
+//     end:"bottom 70%",
+//     scrub:true,
+//     // markers:true,
+//   }
+// })
 
 },comp)
 return ()=> ctx.revert()
 },[])
+
+
 
   return (
     <>
