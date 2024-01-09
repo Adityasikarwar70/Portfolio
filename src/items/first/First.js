@@ -1,69 +1,86 @@
 import React from "react";
 import "./first.css";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../varients";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+
 import resume from "../../images/Resume.pdf"
-// import  LocomotiveScroll  from "locomotive-scroll";
+
 
 const First = () => {
+  const comp = useRef(null)
 
+  useLayoutEffect(()=>{
+    let ctx = gsap.context(()=>{ 
+      const t1 =  gsap.timeline()
+
+      t1
+      .from(["#image","#btn"],{
+        // opacity:0,
+        scale:1.1,
+        y:"+=30",
+        // stagger:0.3,
+      })
+      
+      .from(["#text","#text2"],{
+        opacity:0,
+        y:"+=30",
+        // stagger:0.3,
+        
+      })
+      .from(["#social","#txtexperence"],{
+        opacity:0,
+        x:"+=30",
+        // stagger:0.3,
+      })
+     
+      
+
+
+    },comp)
+    return ()=> ctx.revert()
+  },[])
   
   
 
   return (
-    <>
+    < >
+    <div  ref={comp}>
       <div id="First" className="container">
-        <motion.div
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="about"
+        <div
+         
+          className="about" id="about"
         >
           <img src={require("../../images/hi.png")} alt="" />
           <p>My Name is Aditya And I am Full Stack Designer</p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={fadeIn("right", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text"
+        <div
+         
+          className="text" id="text"
         >
           <h1>Webdesigner</h1>
-        </motion.div>
-        <motion.div
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+        </div>
+        <div
+         
           className="text2"
+          id="text2"
         >
           <h1>&UX/UI designer </h1>
-        </motion.div>
-        <motion.div
-          //  variants={fadeIn("down",0.3)}
-          //  initial="hidden"
-          //  whileInView={"show"}
-          //  viewport={{once: false, amount:0.7}}
+        </div>
+        <div
+         
           className="image"
+          id="image"
         >
-          <img src={require("../../images/Aditya.PNG")} alt="" />
-        </motion.div>
+          <img src={require("../../images/Aditya.webp")} alt="" />
+        </div>
 
-        <motion.div
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="btn"
+        <div 
+          className="btn" id="btn"
         >
           
-          <a href={resume} download="Resume">
+          <a href={resume} download="AdityaResume">
             <button type="button" className="btn1">
-          {/* <a href="https://drive.google.com/file/d/1OGtuhJ1ZnQooSnD_mlklDG-donLT_40O/view?usp=sharing">
-            <button type="button" className="btn1"> */}
               <img src={require("../../images/download.png")} alt="" />
               Download CV
             </button>
@@ -72,29 +89,23 @@ const First = () => {
           <button type="button" className="btn2">
             Skills / Projects
           </button>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.div
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+      <div
         className="txtexperence"
+        id="txtexperence"
       >
         <h1>With 2+ year Experience</h1>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+      <div
         className="social"
+        id="social"
       >
         <a href="https://www.linkedin.com/in/adityasikarwar1/">
           <img
-            className="socialimg"
+            className="socialimg" id="socialimg"
             src={require("../../images/linkedin.png")}
             alt=""
           />
@@ -102,7 +113,7 @@ const First = () => {
 
         <a href="https://github.com/Adityasikarwar70">
           <img
-            className="socialimg"
+            className="socialimg" id="socialimg"
             src={require("../../images/github.png")}
             alt=""
           />
@@ -110,20 +121,21 @@ const First = () => {
 
         <a href="https://www.instagram.com/aadityeahh/">
           <img
-            className="socialimg"
+            className="socialimg" id="socialimg"
             src={require("../../images/insta.png")}
             alt=""
           />
         </a>
 
         <a href="https://mail.google.com/mail/u/0/#inbox">
-          <img
-            className="socialimg"
+          <img 
+            className="socialimg" id="socialimg"
             src={require("../../images/mail.png")}
             alt=""
           />
         </a>
-      </motion.div>
+      </div>
+      </div>
     </>
   );
 };
